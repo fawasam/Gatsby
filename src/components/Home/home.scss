@@ -1,0 +1,158 @@
+.main {
+  width: 100%;
+  height: 76vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  position: relative;
+
+  .name {
+    position: absolute;
+    left: 100px;
+    span {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+  .title {
+    position: absolute;
+    left: 100px;
+    // z-index: 100;
+    h1 {
+      font-size: 6rem;
+      font-weight: 500;
+    }
+    span {
+      width: 100%;
+      position: absolute;
+      left: 200px;
+    }
+  }
+  .falling_icon {
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5s ease;
+    animation: animate 6s linear infinite;
+
+    img {
+      width: 50px;
+      object-fit: cover;
+      padding: 20px;
+    }
+  }
+  .fall-twitter {
+    left: 30px;
+    top: -160px;
+    transition: all 0.5s;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    padding: 80px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #03a9f4;
+      opacity: 0.5;
+      transform: scale(1.5);
+    }
+  }
+  .fall-gmail {
+    right: 89px;
+    top: -120px;
+    transition: all 0.5s;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    padding: 80px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f04035;
+      opacity: 0.5;
+      transform: scale(1.5);
+    }
+  }
+  .fall-dribble {
+    top: 170px;
+    left: 150px;
+    transition: all 0.5s;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 80px;
+    img {
+      z-index: 1;
+    }
+    &:hover {
+      background-color: #fa4696;
+      opacity: 0.5;
+      transform: scale(1.5);
+    }
+  }
+  @keyframes animate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(40px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+.section {
+  position: relative;
+  top: 1200px;
+}
+// @media screen and (max-width: 1000px) {
+//   .main .title {
+//     h1 {
+//       font-size: 12px;
+//     }
+
+//     span {
+//       width: 100%;
+//       position: absolute;
+//       left: 0px;
+//     }
+//   }
+// }
+
+@media (max-width: 500px) {
+  .main {
+    margin-top: 200px;
+    .name {
+      font-size: 2rem;
+      left: 121px;
+      top: -55px;
+    }
+    .title {
+      position: absolute;
+      left: 53px;
+
+      h1 {
+        font-size: 2.3rem;
+        span {
+          left: 20px;
+        }
+      }
+    }
+    .falling_icon {
+      // display: none;
+      img {
+        width: 30px;
+      }
+    }
+    .fall-gmail {
+      padding: 20px;
+      right: -8px;
+    }
+    .fall-dribble {
+      padding: 20px;
+      top: 112px;
+    }
+    .fall-twitter {
+      padding: 20px;
+      top: -16px;
+    }
+  }
+}
