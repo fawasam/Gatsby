@@ -7,7 +7,6 @@ import "./nav.scss"
 //icons
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
-
 //images
 import Behance from "../../assets/behance.png"
 import Gmail from "../../assets/gmail.png"

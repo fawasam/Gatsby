@@ -1,0 +1,38 @@
+.about{
+    max-width: 1400px;
+    .about-title{
+        h1{
+            font-size: 12rem;
+            font-weight: 500;
+        }
+    }
+    .about-main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        .about-left{
+
+        }
+        .about-right{
+            span{
+                font-size: 2.2rem;
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+
+
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .about {
+        max-width: 1400px;
+    
+        .about-title {
+            h1 {
+                font-size: 6rem;
+                font-weight: 500;
+            }
+        }
+}
+}

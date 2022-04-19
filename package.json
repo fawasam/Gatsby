@@ -18,7 +18,9 @@
     "@material-ui/icons": "^4.11.2",
     "gatsby": "^3.10.1",
     "gatsby-plugin-sass": "^4.10.0",
+    "gsap": "^3.8.0",
     "kursor": "^0.1.6",
+    "locomotive-scroll": "^4.1.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.36.0"
